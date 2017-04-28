@@ -11,7 +11,7 @@ setup(
     url='https://github.com/philip-bl/lastfm_vk_download',
     packages=['lastfm_vk_download'],
     package_data={
-        "lastfm_vk_download": ["decode.js", "vkfindaudio-w3m"]},
+        "lastfm_vk_download": ["decode.js", "vkfindaudio-w3m", "urlencode", "htmldecode"]},
     license='MIT',
     install_requires=[
         "click>=6.7",

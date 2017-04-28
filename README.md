@@ -1,13 +1,14 @@
-# LastFM vk.com downloader
+# lastfm vk.com Downloader
 
 This is a tool for downloading your top (overall or for last 12 months or whatever) lastfm tracks
-from vk.com.
+from <vk.com>.
 
 ## How To
 
 You must have *w3m* installed. It's a text based web browser. Look in your distro's repos.
 Get your last.fm API key at <https://www.last.fm/en/api>. Also you need a registered account
 on <https://vk.com>.
+Also you need javascript interpreter that provides *js* executable.
 
 ```shell
 $ pip install --user lastfm_vk_download  # make sure ~/.local/bin is in your $PATH
@@ -31,3 +32,9 @@ $ download_from_vk cocacooler.json cocacooler_top_tracks
 
 $ download_from_vk cocacooler_top_tracks/failed_to_dl.json cocacooler_top_tracks  # try again
 ```
+
+## Notes
+
+This program will sometimes get temporarily banned from using <vk.com> audio search.
+If you see a lot of `Didn't find 'groupname' - 'songname'. It's possible that vk.com temporarily banned this ip or username from audio seach.` then that's probably what happened.
+Just stop the program and wait some time.
