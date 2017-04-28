@@ -1,0 +1,32 @@
+{
+    "build_systems":
+    [
+        {
+            "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+            "name": "Anaconda Python Builder",
+            "selector": "source.python",
+            "shell_cmd": "\"python\" -u \"$file\""
+        }
+    ],
+    "folders":
+    [
+        {
+            "path": "."
+        }
+    ],
+    "settings":
+    {
+        // anaconda
+        "complete_parameters": true,
+        "complete_all_parameters": true,
+        "anaconda_linting_behaviour": "load-save",
+        "pep8_ignore":
+        [
+            "E309", "E501", "E122", "E265", "E266",
+            "W391", "W293", // empty line in the end of file
+            "E303" // too many blank lines
+        ],
+        "pyflakes_explicit_ignore": [],
+        "pep8_max_line_length": 100
+    }
+}
