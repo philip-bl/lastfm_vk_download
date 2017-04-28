@@ -1,2 +1,4 @@
 *.sublime-workspace
 .ipynb_checkpoints
+/dist
+*.egg-info
