@@ -1,7 +1,7 @@
 # lastfm vk.com Downloader
 
 This is a tool for downloading your top (overall or for last 12 months or whatever) lastfm tracks
-from [](https://vk.com).
+from <https://vk.com>.
 
 ## How To
 
